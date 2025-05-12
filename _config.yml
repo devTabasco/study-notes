@@ -6,17 +6,7 @@ permalink: /:title/
 
 # Social links
 github_username: devTabasco
-linkedin_username: your-linkedin-handle
 
 # Build settings
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-
-# Exclude from processing
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor
-  - .git/ 
+  - jekyll-feed 

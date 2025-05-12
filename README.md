@@ -4,7 +4,7 @@ This repository contains my personal study notes and documentation, hosted using
 
 ## 🌐 Website
 
-Visit the website at: `https://changyonglim.github.io/study-notes/`
+Visit the website at: `https://devTabasco.github.io/study-notes/`
 
 ## 📚 Content
 
@@ -33,7 +33,7 @@ gem install bundler jekyll
 
 2. Clone the repository
 ```bash
-git clone https://github.com/changyonglim/study-notes.git
+git clone https://github.com/devTabasco/study-notes.git
 cd study-notes
 ```
 
