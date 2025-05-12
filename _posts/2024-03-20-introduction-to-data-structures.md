@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Week 1: Introduction to Data Structures"
+title: "Introduction to Data Structures"
 date: 2024-03-20
 categories: computer-science
 ---

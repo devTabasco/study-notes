@@ -9,22 +9,18 @@ This is a collection of my personal study notes and documentation. Here you'll f
 
 ## Recent Notes
 
-- [Week 1: Introduction to Data Structures](/week1)
-- [Week 2: Algorithms and Complexity](/week2)
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%B %d, %Y" }}
+{% endfor %}
 
 ## Categories
 
-### Programming
-- [Python Basics](/python-basics)
-- [JavaScript Fundamentals](/javascript-fundamentals)
-
-### Computer Science
-- [Data Structures](/data-structures)
-- [Algorithms](/algorithms)
-
-### Tools & Technologies
-- [Git Basics](/git-basics)
-- [Docker Essentials](/docker-essentials)
+{% for category in site.categories %}
+### {{ category[0] | capitalize }}
+{% for post in category[1] %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
+{% endfor %}
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Week 2: Algorithms and Complexity"
+title: "Algorithms and Complexity"
 date: 2024-03-27
 categories: computer-science
 ---
