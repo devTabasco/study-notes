@@ -32,17 +32,27 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y pandoc
 
+    - name: Create output directory
+      run: mkdir -p posts_html
+
     - name: Convert Markdown to HTML
       run: |
-        mkdir -p posts_html
         for f in posts/*.md; do
-          name=$(basename "$f" .md)
-          pandoc "$f" \
-            --standalone \
-            --template=template.html \
-            --metadata title="$(head -n 1 "$f" | sed 's/^# //')" \
-            -o "posts_html/$name.html"
+          if [ -f "$f" ]; then
+            name=$(basename "$f" .md)
+            echo "Converting $f to posts_html/$name.html"
+            pandoc "$f" \
+              --standalone \
+              --template=template.html \
+              --metadata title="$(head -n 1 "$f" | sed 's/^# //')" \
+              -o "posts_html/$name.html"
+          fi
         done
+
+    - name: List generated files
+      run: |
+        echo "Generated HTML files:"
+        ls -la posts_html/
 
     - name: Setup Pages
       uses: actions/configure-pages@v4
