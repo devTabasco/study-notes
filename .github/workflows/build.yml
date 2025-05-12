@@ -40,7 +40,6 @@ jobs:
           pandoc "$f" \
             --standalone \
             --template=template.html \
-            --css=/assets/css/style.css \
             --metadata title="$(head -n 1 "$f" | sed 's/^# //')" \
             -o "posts_html/$name.html"
         done
