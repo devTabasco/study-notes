@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - Study Notes</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>$title$</title>
+    <link rel="stylesheet" href="$css$">
 </head>
 <body>
     <header class="site-header">
@@ -15,22 +13,21 @@
                 <a href="/">📚 Study Notes</a>
             </div>
             <div class="nav-links">
-                <a href="/categories">Categories</a>
-                <a href="/about">About</a>
-                <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a>
+                <a href="/about.html">About</a>
+                <a href="https://github.com/devTabasco" target="_blank">GitHub</a>
             </div>
         </nav>
     </header>
 
     <main class="container">
         <article class="content">
-            {{ content }}
+            $body$
         </article>
     </main>
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; {{ site.time | date: '%Y' }} Study Notes</p>
+            <p>&copy; 2024 Study Notes</p>
         </div>
     </footer>
 </body>
