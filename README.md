@@ -1,58 +1,46 @@
-# Study Notes
+# Study Notes Website
 
-This repository contains my personal study notes and documentation, hosted using GitHub Pages.
+This is my personal study notes website where I share what I'm learning. I set it up so that when I write notes in Markdown, they automatically get converted to HTML and appear on the website.
 
 ## 🌐 Website
 
-Visit the website at: `https://devTabasco.github.io/study-notes/`
+[https://devtabasco.github.io/study-notes/](https://devtabasco.github.io/study-notes/)
 
-## 📚 Content
+## 📚 How I Organized It
 
-The site includes notes on various topics:
-- Data Structures
-- Algorithms
-- Programming Languages
-- Tools and Technologies
-
-## 🛠 Technical Details
-
-This site is built with:
-- Jekyll (static site generator)
-- GitHub Pages (hosting)
-- Markdown (content format)
-- Minima theme (default Jekyll theme)
-
-## 🚀 Local Development
-
-To run this site locally:
-
-1. Install Ruby and Jekyll
-```bash
-gem install bundler jekyll
+```
+.
+├── posts/              # Where I keep my markdown notes
+├── posts_html/         # Where the HTML versions go
+├── assets/
+│   └── css/           # My website styles
+├── template.html      # The template I use
+└── index.html        # The main page
 ```
 
-2. Clone the repository
-```bash
-git clone https://github.com/devTabasco/study-notes.git
-cd study-notes
+## 📝 My Writing Process
+
+I write my study notes like this:
+
+1. Write a new note in markdown (in `posts/`)
+2. Format it in markdown
+3. Add it to the homepage
+4. Push it to GitHub
+
+Here's how I structure my notes:
+```markdown
+# Study Note Title
+
+## Section 1
+Content...
+
+## Section 2
+Additional content...
 ```
 
-3. Install dependencies
-```bash
-bundle install
-```
+## ✨ How I Built It
 
-4. Start the local server
-```bash
-bundle exec jekyll serve
-```
-
-5. Visit `http://localhost:4000` in your browser
-
-## 📝 Contributing
-
-Feel free to submit issues and enhancement requests!
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details. 
+I put this together using:
+- Pandoc for converting my notes
+- GitHub Actions to automate everything
+- GitHub Pages to host it 
